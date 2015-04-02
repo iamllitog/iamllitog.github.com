@@ -5,8 +5,11 @@ avalon.config({
 });
 
 require(['jquery','domReady!'],function ($) {
-	avalon.define("test", function(vm){
-
+	avalon.define("mean", function(vm){
+		vm.loadedHead =  function () {
+			avalon.scan();
+			var navigation = responsiveNav("#nav");
+		};
 	});
 	avalon.scan();
 });

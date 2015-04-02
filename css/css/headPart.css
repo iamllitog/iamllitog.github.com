@@ -1,0 +1,14 @@
+/* line 2, ../scss/headPart.scss */
+header {
+  height: 50px;
+  background-color: orange;
+}
+
+/* line 7, ../scss/headPart.scss */
+ul.headerUl {
+  /*@include horizontal-list(7px,right)*/
+}
+/* line 9, ../scss/headPart.scss */
+ul.headerUl li {
+  float: left;
+}

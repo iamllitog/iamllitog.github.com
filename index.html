@@ -2,17 +2,16 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
+  <title>桐-blog</title>
   <link rel="stylesheet" href="framework/bootstrap/css/bootstrap.min.css">
+  
   <!-- TODO开发环境需要更换 -->
   <link rel="stylesheet" href="css/css/index.css">
 </head>
-<body>
-  <div ms-controller="test">
-  <div ms-include-src="'viewpart/head.html'"></div>
-  </div>
+<body ms-controller="mean">
+  <div ms-include-src="'./viewpart/headPart.html'"  data-include-rendered="loadedHead"  data-include-replace="true"></div>
 
+  
   <script type="text/javascript" src='framework/avalon/avalon.min.js'></script>
     <!-- TODO开发环境需要更换 -->
   <script type="text/javascript" src='js/src/index.js'></script>
