@@ -5,5 +5,8 @@ avalon.config({
 });
 
 require(['jquery','domReady!'],function ($) {
-	
+	avalon.define("test", function(vm){
+
+	});
+	avalon.scan();
 });
