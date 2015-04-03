@@ -14,11 +14,17 @@ button.navbar-toggle > .icon-bar {
   color: white !important;
 }
 
-/* line 19, ../scss/headPart.scss */
+@media (min-width: 768px) {
+  /* line 18, ../scss/headPart.scss */
+  .navbar-nav {
+    float: right;
+  }
+}
+/* line 23, ../scss/headPart.scss */
 .navbar-nav > li > a {
   color: white !important;
 }
-/* line 22, ../scss/headPart.scss */
+/* line 26, ../scss/headPart.scss */
 .navbar-nav > .active > a {
   background-color: #99CC66 !important;
 }
