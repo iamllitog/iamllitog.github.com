@@ -3,10 +3,3 @@ header{
 	height: 50px;
 	background-color: orange;
 }
-
-ul.headerUl{
-	/*@include horizontal-list(7px,right)*/
-	li{
-		float: left;
-	}
-}
