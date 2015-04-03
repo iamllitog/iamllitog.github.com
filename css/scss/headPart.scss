@@ -1,5 +1,25 @@
 @import "compass/typography";
-header{
-	height: 50px;
-	background-color: orange;
+$headerColor : #0099CC;
+$headerActiveColor : #99CC66;
+
+header.navbar-mynav{
+	background-color: $headerColor !important;
+	border-color: $headerActiveColor !important;
+}
+button.navbar-toggle{
+	>.icon-bar{
+		background-color: $headerActiveColor !important;
+	}
+}
+.navbar-brand{
+	color: white !important;
+}
+
+.navbar-nav{
+	>li>a{
+		color: white !important;
+	}
+	>.active>a{
+		background-color: $headerActiveColor !important;
+	}
 }

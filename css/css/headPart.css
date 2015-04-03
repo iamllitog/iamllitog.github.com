@@ -1,14 +1,24 @@
-/* line 2, ../scss/headPart.scss */
-header {
-  height: 50px;
-  background-color: orange;
+/* line 5, ../scss/headPart.scss */
+header.navbar-mynav {
+  background-color: #0099CC !important;
+  border-color: #99CC66 !important;
 }
 
-/* line 7, ../scss/headPart.scss */
-ul.headerUl {
-  /*@include horizontal-list(7px,right)*/
+/* line 10, ../scss/headPart.scss */
+button.navbar-toggle > .icon-bar {
+  background-color: #99CC66 !important;
 }
-/* line 9, ../scss/headPart.scss */
-ul.headerUl li {
-  float: left;
+
+/* line 14, ../scss/headPart.scss */
+.navbar-brand {
+  color: white !important;
+}
+
+/* line 19, ../scss/headPart.scss */
+.navbar-nav > li > a {
+  color: white !important;
+}
+/* line 22, ../scss/headPart.scss */
+.navbar-nav > .active > a {
+  background-color: #99CC66 !important;
 }
