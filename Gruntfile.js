@@ -39,14 +39,18 @@ grunt.initConfig({
         options :{
           outputStyle:'expanded',
           sassDir:'css/scss',
-          cssDir : 'css/css'
+          cssDir : 'css/css',
+          imagesDir : 'img',
+        generatedImagesDir :'img',
         }
       },
       product : {
         options :{
           outputStyle:'compressed',
           sassDir:'css/scss',
-          cssDir : 'css/dist'
+          cssDir : 'css/dist',
+          imagesDir : 'img',
+        generatedImagesDir :'img',
         }
       }
     },

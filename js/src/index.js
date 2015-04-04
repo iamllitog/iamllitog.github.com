@@ -8,11 +8,9 @@ avalon.config({
             exports: "$"
         },
         "bootstrap": {
-            deps: ["jquery"],
-            exports: "$.fn.popover"
+            deps: ["jquery"]
         }
-    },
-    enforceDefine: true
+    }
 });
 
 require(['jquery','bootstrap','domReady!'],function () {

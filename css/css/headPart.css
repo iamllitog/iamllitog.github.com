@@ -1,12 +1,12 @@
 /* line 5, ../scss/headPart.scss */
 header.navbar-mynav {
-  background-color: #0099CC !important;
-  border-color: #99CC66 !important;
+  background-color: #1c1c1c !important;
+  border-color: #2F4F4F !important;
 }
 
 /* line 10, ../scss/headPart.scss */
 button.navbar-toggle > .icon-bar {
-  background-color: #99CC66 !important;
+  background-color: #2F4F4F !important;
 }
 
 /* line 14, ../scss/headPart.scss */
@@ -26,5 +26,5 @@ button.navbar-toggle > .icon-bar {
 }
 /* line 26, ../scss/headPart.scss */
 .navbar-nav > .active > a {
-  background-color: #99CC66 !important;
+  background-color: #2F4F4F !important;
 }
