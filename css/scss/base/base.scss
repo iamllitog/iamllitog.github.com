@@ -1,3 +1,10 @@
+$splitColor : #848484;
+//小屏幕
+$screen-sm : 768px;
+//中屏幕
+$screen-md : 992px;
+//大屏幕
+$screen-lg : 1200px;
 body{
 	background-image: image-url('background.png');
 }

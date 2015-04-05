@@ -3,13 +3,22 @@
 @import "compass/css3";
 @import "base/base";
 
+//常用参数
+$font1Color : #1c1c1c;
+$font2Color : #2F4F4F;
+
+//大图
 .my-jumbotron{
 	background-image: image-url('jumbotron3.jpg');
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	height : 380px;
-	@media screen and (min-width: 768px){
+	@media screen and (min-width: $screen-sm){
 		height : 520px;
+	}
+	//手机屏幕下
+	@media screen and (max-width: $screen-sm){
+		margin-bottom:0px;
 	}
 	.container{
 		text-align: center;
@@ -19,21 +28,93 @@
 		}
 		>h1{
 			margin-top: 15px;
-			@media screen and (min-width: 768px){
+			@media screen and (min-width: $screen-sm){
 				font-size: 2em;
 			}
 			font-size: 1.5em;
 		}
 	}
+
 }
 #headIcon{
 	@include box-shadow(
 		#1c1c1c 0 0 0 5px);
 	width: 120px;
 	height: 120px;
-	@media screen and (min-width: 768px){
-				margin-top: 80px;
-			}
+	@media screen and (min-width: $screen-sm){
+		margin-top: 80px;
+	}
 	margin-top: 50px;
 
+}
+
+//里程碑标题区域
+$milestoneHeight : 350px;
+$milestoneSMHeight : 280px;
+$milestoneXSHeight : 200px;
+$milestoneXSIcon : 150px;
+div.milestoneArea{
+	height: $milestoneHeight;
+	color: $font2Color;
+	border-bottom: 1px solid $splitColor;
+	img.milestoneImg{
+		width: $milestoneHeight;
+		height: $milestoneHeight;
+	}
+
+	//小屏幕下
+	@media screen and (min-width: $screen-sm) and (max-width:$screen-md){
+		height: $milestoneSMHeight;
+		.contentArea{
+			padding-top: 1em;
+			padding-left: 3.5em;
+		}
+		
+		img.milestoneImg{
+			width: $milestoneSMHeight;
+			height: $milestoneSMHeight;
+		}
+	}
+
+	//手机屏幕下
+	@media screen and (max-width: $screen-sm){
+		text-align:center;
+		height: $milestoneXSHeight;
+		.xsImg{
+			padding-left:25px;
+		}
+		img.milestoneImg{
+			width: $milestoneXSIcon;
+			height: $milestoneXSIcon;
+		}
+	}
+	.contentArea{
+		padding-top: 2em;
+		h2{
+			padding-left: 12%;
+			font-size: 2em;
+			font-weight: bold;
+		}
+		ul{
+			text-align: left;
+			margin-top: 1em;
+			font-size: 1.2em;
+			padding-left: 1em;
+			li{
+				line-height: 2.2em;
+			}
+		}
+		//手机屏幕下
+		@media screen and (max-width: $screen-sm){
+			padding-top:0px;
+			h2{
+				padding-left: 0px;
+				font-size: 1.5em;
+			}
+			ul{
+				display: none;
+			}
+		}
+	}
+	
 }
