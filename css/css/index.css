@@ -125,81 +125,95 @@ body {
 }
 
 /* line 56, ../scss/index.scss */
-div.milestoneArea {
-  height: 350px;
+div.milestoneTitle {
+  height: 335px;
   color: #2F4F4F;
   border-bottom: 1px solid #848484;
 }
 /* line 60, ../scss/index.scss */
-div.milestoneArea img.milestoneImg {
-  width: 350px;
-  height: 350px;
+div.milestoneTitle img.milestoneImg {
+  width: 330px;
+  height: 330px;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   /* line 56, ../scss/index.scss */
-  div.milestoneArea {
-    height: 280px;
+  div.milestoneTitle {
+    height: 285px;
   }
   /* line 68, ../scss/index.scss */
-  div.milestoneArea .contentArea {
+  div.milestoneTitle .contentArea {
     padding-top: 1em;
     padding-left: 3.5em;
   }
   /* line 73, ../scss/index.scss */
-  div.milestoneArea img.milestoneImg {
+  div.milestoneTitle img.milestoneImg {
     width: 280px;
     height: 280px;
   }
 }
 @media screen and (max-width: 768px) {
   /* line 56, ../scss/index.scss */
-  div.milestoneArea {
+  div.milestoneTitle {
     text-align: center;
     height: 200px;
   }
   /* line 83, ../scss/index.scss */
-  div.milestoneArea .xsImg {
+  div.milestoneTitle .xsImg {
     padding-left: 25px;
   }
   /* line 86, ../scss/index.scss */
-  div.milestoneArea img.milestoneImg {
+  div.milestoneTitle img.milestoneImg {
     width: 150px;
     height: 150px;
   }
 }
 /* line 91, ../scss/index.scss */
-div.milestoneArea .contentArea {
+div.milestoneTitle .contentArea {
   padding-top: 2em;
 }
 /* line 93, ../scss/index.scss */
-div.milestoneArea .contentArea h2 {
+div.milestoneTitle .contentArea h2 {
   padding-left: 12%;
   font-size: 2em;
   font-weight: bold;
 }
 /* line 98, ../scss/index.scss */
-div.milestoneArea .contentArea ul {
+div.milestoneTitle .contentArea ul {
   text-align: left;
   margin-top: 1em;
   font-size: 1.2em;
   padding-left: 1em;
 }
 /* line 103, ../scss/index.scss */
-div.milestoneArea .contentArea ul li {
+div.milestoneTitle .contentArea ul li {
   line-height: 2.2em;
 }
 @media screen and (max-width: 768px) {
   /* line 91, ../scss/index.scss */
-  div.milestoneArea .contentArea {
+  div.milestoneTitle .contentArea {
     padding-top: 0px;
   }
   /* line 110, ../scss/index.scss */
-  div.milestoneArea .contentArea h2 {
+  div.milestoneTitle .contentArea h2 {
     padding-left: 0px;
     font-size: 1.5em;
   }
   /* line 114, ../scss/index.scss */
-  div.milestoneArea .contentArea ul {
+  div.milestoneTitle .contentArea ul {
     display: none;
   }
+}
+
+/* line 124, ../scss/index.scss */
+div.milestoneContent div.thumbnail {
+  height: 280px;
+}
+/* line 126, ../scss/index.scss */
+div.milestoneContent div.thumbnail img {
+  height: 80%;
+}
+/* line 130, ../scss/index.scss */
+div.milestoneContent > div {
+  margin-top: 20px;
+  text-align: center;
 }

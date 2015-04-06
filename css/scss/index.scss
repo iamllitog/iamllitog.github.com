@@ -49,12 +49,12 @@ $font2Color : #2F4F4F;
 }
 
 //里程碑标题区域
-$milestoneHeight : 350px;
+$milestoneHeight : 330px;
 $milestoneSMHeight : 280px;
 $milestoneXSHeight : 200px;
 $milestoneXSIcon : 150px;
-div.milestoneArea{
-	height: $milestoneHeight;
+div.milestoneTitle{
+	height: $milestoneHeight + 5;
 	color: $font2Color;
 	border-bottom: 1px solid $splitColor;
 	img.milestoneImg{
@@ -64,7 +64,7 @@ div.milestoneArea{
 
 	//小屏幕下
 	@media screen and (min-width: $screen-sm) and (max-width:$screen-md){
-		height: $milestoneSMHeight;
+		height: $milestoneSMHeight + 5;
 		.contentArea{
 			padding-top: 1em;
 			padding-left: 3.5em;
@@ -116,5 +116,19 @@ div.milestoneArea{
 			}
 		}
 	}
-	
+}
+
+//里程碑内容区域
+$milestoneItemHeight : 280px;
+div.milestoneContent{
+	div.thumbnail{
+		height: $milestoneItemHeight;
+		img{
+			height: 80%;
+		}
+	}
+	>div{
+		margin-top: 20px;
+		text-align: center;
+	}
 }
