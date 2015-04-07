@@ -204,15 +204,21 @@ div.milestoneTitle .contentArea ul li {
   }
 }
 
-/* line 124, ../scss/index.scss */
+/* line 125, ../scss/index.scss */
 div.milestoneContent div.thumbnail {
   height: 280px;
 }
-/* line 126, ../scss/index.scss */
+/* line 127, ../scss/index.scss */
 div.milestoneContent div.thumbnail img {
   height: 80%;
 }
-/* line 130, ../scss/index.scss */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 125, ../scss/index.scss */
+  div.milestoneContent div.thumbnail {
+    height: 250px;
+  }
+}
+/* line 135, ../scss/index.scss */
 div.milestoneContent > div {
   margin-top: 20px;
   text-align: center;

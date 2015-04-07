@@ -1,0 +1,18 @@
+/* line 5, ../scss/footPart.scss */
+.my-footer {
+  color: white;
+  margin-top: 10px;
+  background-color: #2F4F4F;
+  height: 200px;
+}
+/* line 11, ../scss/footPart.scss */
+.my-footer div.title h2 {
+  height: 100%;
+  font-size: 2em;
+  padding-top: 30px;
+}
+/* line 16, ../scss/footPart.scss */
+.my-footer div.title p {
+  padding-top: 10px;
+  font-size: 0.9em;
+}

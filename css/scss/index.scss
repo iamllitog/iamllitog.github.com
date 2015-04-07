@@ -120,11 +120,16 @@ div.milestoneTitle{
 
 //里程碑内容区域
 $milestoneItemHeight : 280px;
+$milestoneItemSMHeight : 250px;
 div.milestoneContent{
 	div.thumbnail{
 		height: $milestoneItemHeight;
 		img{
 			height: 80%;
+		}
+		//中型屏幕调整高度
+		@media screen and (min-width: $screen-md) and (max-width:$screen-lg){
+			height: $milestoneItemSMHeight;
 		}
 	}
 	>div{
