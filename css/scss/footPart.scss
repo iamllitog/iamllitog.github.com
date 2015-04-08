@@ -1,21 +1,47 @@
-$color1 : #1c1c1c;
-$color2 : #2F4F4F;
+@import "compass/typography";
+$color1: #1c1c1c;
+$color2: #2F4F4F;
 
-$footerHeight:200px;
-.my-footer{
-	color: white;
-	margin-top: 10px;
-	background-color: $color2;
-	height: $footerHeight;
-	div.title{
-		h2{
-			height: 100%;
-			font-size:2em;
-			padding-top: 30px
-		}
-		p{
-			padding-top: 10px;
-			font-size:0.9em;
-		}
-	}
+.my-footer {
+  color: white;
+  margin-top: 10px;
+  background-color: $color2;
+  padding-bottom: 30px;
+
+  div.title {
+    color : #D1E9E9;
+    h2 {
+      font-size: 2em;
+      padding-top: 40px
+    }
+    p {
+      padding-top: 10px;
+      font-size: 0.9em;
+    }
+  }
+  div.content {
+    color:#00E3E3;
+    h3 {
+      font-size: 1.05em;
+      padding-top: 35px
+    }
+    >div{
+      margin-top: 10px;
+      p {
+        font-size: 0.9em;
+        padding-top: 5px;
+        a{
+          $linkColor : #00E3E3;
+          @include link-colors(
+                  $linkColor,
+            $hover : white,
+          $visited : $linkColor,
+          $focus : $linkColor
+
+          );
+        }
+      }
+    }
+
+  }
 }

@@ -3,16 +3,53 @@
   color: white;
   margin-top: 10px;
   background-color: #2F4F4F;
-  height: 200px;
+  padding-bottom: 30px;
 }
 /* line 11, ../scss/footPart.scss */
-.my-footer div.title h2 {
-  height: 100%;
-  font-size: 2em;
-  padding-top: 30px;
+.my-footer div.title {
+  color: #D1E9E9;
 }
-/* line 16, ../scss/footPart.scss */
+/* line 13, ../scss/footPart.scss */
+.my-footer div.title h2 {
+  font-size: 2em;
+  padding-top: 40px;
+}
+/* line 17, ../scss/footPart.scss */
 .my-footer div.title p {
   padding-top: 10px;
   font-size: 0.9em;
+}
+/* line 22, ../scss/footPart.scss */
+.my-footer div.content {
+  color: #00E3E3;
+}
+/* line 24, ../scss/footPart.scss */
+.my-footer div.content h3 {
+  font-size: 1.05em;
+  padding-top: 35px;
+}
+/* line 28, ../scss/footPart.scss */
+.my-footer div.content > div {
+  margin-top: 10px;
+}
+/* line 30, ../scss/footPart.scss */
+.my-footer div.content > div p {
+  font-size: 0.9em;
+  padding-top: 5px;
+}
+/* line 33, ../scss/footPart.scss */
+.my-footer div.content > div p a {
+  color: #00E3E3;
+}
+/* line 18, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+.my-footer div.content > div p a:visited {
+  color: #00E3E3;
+}
+/* line 21, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+.my-footer div.content > div p a:focus {
+  color: #00E3E3;
+}
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+.my-footer div.content > div p a:hover {
+  color: white;
 }
