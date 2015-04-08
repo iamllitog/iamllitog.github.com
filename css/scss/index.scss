@@ -6,6 +6,7 @@
 //常用参数
 $font1Color : #1c1c1c;
 $font2Color : #2F4F4F;
+$splitBorder : 1px solid $splitColor;
 
 //大图
 .my-jumbotron{
@@ -56,7 +57,7 @@ $milestoneXSIcon : 150px;
 div.milestoneTitle{
 	height: $milestoneHeight + 5;
 	color: $font2Color;
-	border-bottom: 1px solid $splitColor;
+	border-bottom: $splitBorder;
 	img.milestoneImg{
 		width: $milestoneHeight;
 		height: $milestoneHeight;
@@ -122,6 +123,7 @@ div.milestoneTitle{
 $milestoneItemHeight : 280px;
 $milestoneItemSMHeight : 250px;
 div.milestoneContent{
+	border-bottom: $splitBorder;
 	div.thumbnail{
 		height: $milestoneItemHeight;
 		img{
@@ -135,5 +137,14 @@ div.milestoneContent{
 	>div{
 		margin-top: 20px;
 		text-align: center;
+	}
+}
+
+//近期项目标题
+div.recentArticlesTitle{
+	>h2{
+		font-size: 1.5em;
+		margin-left: 20px;
+		line-height: 2.5em;
 	}
 }

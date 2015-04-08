@@ -10,9 +10,10 @@ $color2: #2F4F4F;
 
   div.title {
     color : #D1E9E9;
+    padding-left: 20px;
     h2 {
       font-size: 2em;
-      padding-top: 40px
+      padding-top: 30px
     }
     p {
       padding-top: 10px;
@@ -20,7 +21,7 @@ $color2: #2F4F4F;
     }
   }
   div.content {
-    color:#00E3E3;
+    color:#CCCCCC;
     h3 {
       font-size: 1.05em;
       padding-top: 35px
@@ -33,12 +34,12 @@ $color2: #2F4F4F;
         a{
           $linkColor : #00E3E3;
           @include link-colors(
-                  $linkColor,
+            $linkColor,
             $hover : white,
-          $visited : $linkColor,
-          $focus : $linkColor
+            $visited : $linkColor,
+            $focus : $linkColor
 
-          );
+            );
         }
       }
     }

@@ -8,48 +8,49 @@
 /* line 11, ../scss/footPart.scss */
 .my-footer div.title {
   color: #D1E9E9;
+  padding-left: 20px;
 }
-/* line 13, ../scss/footPart.scss */
+/* line 14, ../scss/footPart.scss */
 .my-footer div.title h2 {
   font-size: 2em;
-  padding-top: 40px;
+  padding-top: 30px;
 }
-/* line 17, ../scss/footPart.scss */
+/* line 18, ../scss/footPart.scss */
 .my-footer div.title p {
   padding-top: 10px;
   font-size: 0.9em;
 }
-/* line 22, ../scss/footPart.scss */
+/* line 23, ../scss/footPart.scss */
 .my-footer div.content {
-  color: #00E3E3;
+  color: #CCCCCC;
 }
-/* line 24, ../scss/footPart.scss */
+/* line 25, ../scss/footPart.scss */
 .my-footer div.content h3 {
   font-size: 1.05em;
   padding-top: 35px;
 }
-/* line 28, ../scss/footPart.scss */
+/* line 29, ../scss/footPart.scss */
 .my-footer div.content > div {
   margin-top: 10px;
 }
-/* line 30, ../scss/footPart.scss */
+/* line 31, ../scss/footPart.scss */
 .my-footer div.content > div p {
   font-size: 0.9em;
   padding-top: 5px;
 }
-/* line 33, ../scss/footPart.scss */
+/* line 34, ../scss/footPart.scss */
 .my-footer div.content > div p a {
   color: #00E3E3;
 }
-/* line 18, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 18, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
 .my-footer div.content > div p a:visited {
   color: #00E3E3;
 }
-/* line 21, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 21, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
 .my-footer div.content > div p a:focus {
   color: #00E3E3;
 }
-/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
 .my-footer div.content > div p a:hover {
   color: white;
 }
