@@ -63,7 +63,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 8, ../scss/base/base.scss */
+/* line 10, ../scss/base/base.scss */
 body {
   background-image: url('/img/background.png?1428129064');
 }
@@ -233,4 +233,63 @@ div.recentArticlesTitle > h2 {
   font-size: 1.5em;
   margin-left: 20px;
   line-height: 2.5em;
+}
+
+/* line 154, ../scss/index.scss */
+div.recentArticlesContent > div {
+  border-bottom: 1px solid #D8D8D8;
+  padding: 10px 0 10px 20px;
+}
+/* line 157, ../scss/index.scss */
+div.recentArticlesContent > div h3 {
+  font-size: 1.1em;
+}
+/* line 169, ../scss/index.scss */
+div.recentArticlesContent > div h3 span.reprintedBadge {
+  margin-left: 5px;
+  color: white;
+  padding: 2px;
+  font-size: 0.8em;
+  background-color: red;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 173, ../scss/index.scss */
+div.recentArticlesContent > div h3 span.learnBadge {
+  margin-left: 5px;
+  color: white;
+  padding: 2px;
+  font-size: 0.8em;
+  background-color: #4e72b8;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 177, ../scss/index.scss */
+div.recentArticlesContent > div h3 span.lifeBadge {
+  margin-left: 5px;
+  color: white;
+  padding: 2px;
+  font-size: 0.8em;
+  background-color: #40835e;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 181, ../scss/index.scss */
+div.recentArticlesContent > div h3 span.bookBadge {
+  margin-left: 5px;
+  color: white;
+  padding: 2px;
+  font-size: 0.8em;
+  background-color: #2f271d;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 185, ../scss/index.scss */
+div.recentArticlesContent > div > div {
+  color: #666;
+  margin-top: 8px;
 }

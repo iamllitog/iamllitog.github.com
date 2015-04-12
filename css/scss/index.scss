@@ -148,3 +148,43 @@ div.recentArticlesTitle{
 		line-height: 2.5em;
 	}
 }
+
+//近期项目条目
+div.recentArticlesContent{
+	>div{
+		border-bottom: 1px solid $split2Color;
+		padding:10px 0 10px 20px; 
+		h3{
+			font-size: 1.1em;
+			//徽章选择器
+			@mixin articleBadge($backColor : red,$fontColor : white){
+				margin-left:5px;
+				color: $fontColor;
+				padding: 2px;
+				font-size: 0.8em;
+				background-color: $backColor;
+				@include border-radius(5px);
+			}
+			//转载徽章
+			span.reprintedBadge{
+				@include articleBadge();
+			}
+			//学习徽章
+			span.learnBadge{
+				@include articleBadge(#4e72b8);
+			}
+			//生活徽章
+			span.lifeBadge{
+				@include articleBadge(#40835e);
+			}
+			//图书徽章
+			span.bookBadge{
+				@include articleBadge(#2f271d);
+			}
+		}
+		>div{
+			color: #666;
+			margin-top: 8px;
+		}
+	}
+}
