@@ -115,3 +115,62 @@ span.bookBadge {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
+
+/* line 4, ../../scss/base/detailPage.scss */
+article.article {
+  margin-top: 70px;
+  margin-bottom: 50px;
+  color: #333;
+}
+/* line 8, ../../scss/base/detailPage.scss */
+article.article h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+/* line 12, ../../scss/base/detailPage.scss */
+article.article h2 {
+  margin-top: 20px;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+/* line 17, ../../scss/base/detailPage.scss */
+article.article h4 {
+  margin-top: 15px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+/* line 22, ../../scss/base/detailPage.scss */
+article.article p {
+  margin-top: 10px;
+  font-size: 1.1em;
+  line-height: 1.75;
+}
+/* line 27, ../../scss/base/detailPage.scss */
+article.article ul, article.article ol {
+  font-size: 1.1em;
+  line-height: 1.75;
+  padding-left: 2em;
+}
+/* line 32, ../../scss/base/detailPage.scss */
+article.article ol {
+  padding-left: 3em;
+  list-style-type: decimal;
+}
+@media screen and (max-width: 768px) {
+  /* line 38, ../../scss/base/detailPage.scss */
+  article.article ul {
+    padding-left: 0;
+  }
+  /* line 41, ../../scss/base/detailPage.scss */
+  article.article ol {
+    padding-left: 2em;
+  }
+}
+/* line 45, ../../scss/base/detailPage.scss */
+article.article pre {
+  border: 1px solid #b9def0;
+}
+/* line 48, ../../scss/base/detailPage.scss */
+article.article strong {
+  font-weight: bold;
+}

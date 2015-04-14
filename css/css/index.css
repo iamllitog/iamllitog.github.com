@@ -63,12 +63,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 10, ../scss/base/base.scss */
+/* line 13, ../scss/base/base.scss */
 body {
   background-image: url('/img/background.png?1428378580');
 }
 
-/* line 24, ../scss/base/base.scss */
+/* line 27, ../scss/base/base.scss */
 span.reprintedBadge {
   margin-left: 5px;
   color: white;
@@ -80,7 +80,7 @@ span.reprintedBadge {
   border-radius: 5px;
 }
 
-/* line 28, ../scss/base/base.scss */
+/* line 31, ../scss/base/base.scss */
 span.learnBadge {
   margin-left: 5px;
   color: white;
@@ -92,7 +92,7 @@ span.learnBadge {
   border-radius: 5px;
 }
 
-/* line 32, ../scss/base/base.scss */
+/* line 35, ../scss/base/base.scss */
 span.lifeBadge {
   margin-left: 5px;
   color: white;
@@ -104,7 +104,7 @@ span.lifeBadge {
   border-radius: 5px;
 }
 
-/* line 36, ../scss/base/base.scss */
+/* line 39, ../scss/base/base.scss */
 span.bookBadge {
   margin-left: 5px;
   color: white;
@@ -116,7 +116,7 @@ span.bookBadge {
   border-radius: 5px;
 }
 
-/* line 12, ../scss/index.scss */
+/* line 9, ../scss/index.scss */
 .my-jumbotron {
   background-image: url('/img/jumbotron3.jpg?1428378580');
   background-repeat: no-repeat;
@@ -124,39 +124,39 @@ span.bookBadge {
   height: 380px;
 }
 @media screen and (min-width: 768px) {
-  /* line 12, ../scss/index.scss */
+  /* line 9, ../scss/index.scss */
   .my-jumbotron {
     height: 520px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 12, ../scss/index.scss */
+  /* line 9, ../scss/index.scss */
   .my-jumbotron {
     margin-bottom: 0px;
   }
 }
-/* line 24, ../scss/index.scss */
+/* line 21, ../scss/index.scss */
 .my-jumbotron .container {
   text-align: center;
   color: white;
 }
-/* line 27, ../scss/index.scss */
+/* line 24, ../scss/index.scss */
 .my-jumbotron .container > h3 {
   margin-top: 30px;
 }
-/* line 30, ../scss/index.scss */
+/* line 27, ../scss/index.scss */
 .my-jumbotron .container > h1 {
   margin-top: 15px;
   font-size: 1.5em;
 }
 @media screen and (min-width: 768px) {
-  /* line 30, ../scss/index.scss */
+  /* line 27, ../scss/index.scss */
   .my-jumbotron .container > h1 {
     font-size: 2em;
   }
 }
 
-/* line 40, ../scss/index.scss */
+/* line 37, ../scss/index.scss */
 #headIcon {
   -moz-box-shadow: #1c1c1c 0 0 0 5px;
   -webkit-box-shadow: #1c1c1c 0 0 0 5px;
@@ -166,112 +166,112 @@ span.bookBadge {
   margin-top: 50px;
 }
 @media screen and (min-width: 768px) {
-  /* line 40, ../scss/index.scss */
+  /* line 37, ../scss/index.scss */
   #headIcon {
     margin-top: 80px;
   }
 }
 
-/* line 57, ../scss/index.scss */
+/* line 54, ../scss/index.scss */
 div.milestoneTitle {
   height: 335px;
   color: #2F4F4F;
   border-bottom: 1px solid #848484;
 }
-/* line 61, ../scss/index.scss */
+/* line 58, ../scss/index.scss */
 div.milestoneTitle img.milestoneImg {
   margin-top: 15px;
   width: 330px;
   height: auto;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  /* line 57, ../scss/index.scss */
+  /* line 54, ../scss/index.scss */
   div.milestoneTitle {
     height: 285px;
   }
-  /* line 70, ../scss/index.scss */
+  /* line 67, ../scss/index.scss */
   div.milestoneTitle .contentArea {
     padding-top: 1em;
     padding-left: 3.5em;
   }
-  /* line 75, ../scss/index.scss */
+  /* line 72, ../scss/index.scss */
   div.milestoneTitle img.milestoneImg {
     width: 280px;
     height: auto;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 57, ../scss/index.scss */
+  /* line 54, ../scss/index.scss */
   div.milestoneTitle {
     text-align: center;
     height: 200px;
   }
-  /* line 85, ../scss/index.scss */
+  /* line 82, ../scss/index.scss */
   div.milestoneTitle .xsImg {
     padding-left: 25px;
   }
-  /* line 88, ../scss/index.scss */
+  /* line 85, ../scss/index.scss */
   div.milestoneTitle img.milestoneImg {
     width: 150px;
     height: auto;
   }
 }
-/* line 93, ../scss/index.scss */
+/* line 90, ../scss/index.scss */
 div.milestoneTitle .contentArea {
   padding-top: 2em;
 }
-/* line 95, ../scss/index.scss */
+/* line 92, ../scss/index.scss */
 div.milestoneTitle .contentArea h2 {
   padding-left: 12%;
   font-size: 2em;
   font-weight: bold;
 }
-/* line 100, ../scss/index.scss */
+/* line 97, ../scss/index.scss */
 div.milestoneTitle .contentArea ul {
   text-align: left;
   margin-top: 1em;
   font-size: 1.2em;
   padding-left: 1em;
 }
-/* line 105, ../scss/index.scss */
+/* line 102, ../scss/index.scss */
 div.milestoneTitle .contentArea ul li {
   line-height: 2.2em;
 }
 @media screen and (max-width: 768px) {
-  /* line 93, ../scss/index.scss */
+  /* line 90, ../scss/index.scss */
   div.milestoneTitle .contentArea {
     padding-top: 0px;
   }
-  /* line 112, ../scss/index.scss */
+  /* line 109, ../scss/index.scss */
   div.milestoneTitle .contentArea h2 {
     padding-left: 0px;
     font-size: 1.5em;
   }
-  /* line 116, ../scss/index.scss */
+  /* line 113, ../scss/index.scss */
   div.milestoneTitle .contentArea ul {
     display: none;
   }
 }
 
-/* line 126, ../scss/index.scss */
+/* line 123, ../scss/index.scss */
 div.milestoneContent {
   border-bottom: 1px solid #848484;
 }
-/* line 128, ../scss/index.scss */
+/* line 125, ../scss/index.scss */
 div.milestoneContent div.thumbnail {
   height: 280px;
 }
-/* line 130, ../scss/index.scss */
+/* line 127, ../scss/index.scss */
 div.milestoneContent div.thumbnail img {
   height: 80%;
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-  /* line 128, ../scss/index.scss */
+  /* line 125, ../scss/index.scss */
   div.milestoneContent div.thumbnail {
     height: 250px;
   }
 }
-/* line 138, ../scss/index.scss */
+/* line 135, ../scss/index.scss */
 div.milestoneContent > div {
   margin-top: 20px;
   text-align: center;

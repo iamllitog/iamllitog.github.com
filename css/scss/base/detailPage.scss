@@ -1,0 +1,51 @@
+@import "base";
+
+//文章区域
+article.article{
+  margin-top: 70px;
+  margin-bottom: 50px;
+  color : #333;
+  h1{
+    font-size: 2em;
+    font-weight: bold;
+  }
+  h2{
+    margin-top: 20px;
+    font-size: 1.6em;
+    font-weight: bold;
+  }
+  h4{
+    margin-top: 15px;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  p{
+    margin-top: 10px;
+    font-size: 1.1em;
+    line-height: 1.75;
+  }
+  ul,ol{
+    font-size: 1.1em;
+    line-height: 1.75;
+    padding-left: 2em;
+  }
+  ol{
+    padding-left: 3em;
+    list-style-type:decimal;
+  }
+  //手机屏幕下
+  @media screen and (max-width: $screen-sm){
+    ul{
+      padding-left: 0;
+    }
+    ol{
+      padding-left: 2em;
+    }
+  }
+  pre{
+    border: 1px solid #b9def0;
+  }
+  strong{
+    font-weight: bold;
+  }
+}
