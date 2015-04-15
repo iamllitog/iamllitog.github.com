@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>前端面试总结-HTML</title>
+    <link rel="stylesheet" href="../framework/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../framework/font-swesome/css/font-awesome.min.css">
+
+    <!-- TODO开发环境需要更换 -->
+    <link rel="stylesheet" href="../css/css/base/detailPage.css">
+</head>
+<body ms-controller="mean">
+<div ms-include-src="'../viewpart/headPart.html'" data-include-replace="true" data-include-rendered='loadHead'></div>
+
+<article class="container article">
+    <h1>前端面试题总结-Html</h1>
+
+    <div class="row">
+        <div class="col-xs-12">
+        <h2>一.兼容性问题</h2>
+        <h4>1.浏览器默认的margin和padding不同。</h4>
+
+        <p>
+        <ul>
+            <li>解决方案是加一个全局的*{margin:0;padding:0;}来统一(不推荐)。</li>
+            <li>或者使用sass的reset模块重置</li>
+            <li>附：淘宝初始化方法:</li>
+            <li><pre>   body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+    body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }
+    h1, h2, h3, h4, h5, h6{ font-size:100%; }
+    address, cite, dfn, em, var { font-style:normal; }
+    code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+    small{ font-size:12px; }
+    ul, ol { list-style:none; }
+    a { text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    sup { vertical-align:text-top; }
+    sub{ vertical-align:text-bottom; }
+    legend { color:#000; }
+    fieldset, img { border:0; }
+    button, input, select, textarea { font-size:100%; }
+    table { border-collapse:collapse; border-spacing:0; }</pre>
+            </li>
+        </ul>
+        </p>
+        <h4>2.png24位的图片在iE6浏览器上出现背景</h4>
+
+        <p>
+            解决方案是做成PNG8.
+        </p>
+        <h4>3.ie6双边距bug</h4>
+
+        <p>
+        <ul>
+            <li>块属性标签float后，又有横行的margin情况下，在ie6显示margin比设置的大。</li>
+            <li>浮动ie产生的双倍距离 #box{ float:left; width:10px; margin:0 0 0 100px;}</li>
+            <li>这种情况之下IE会产生20px的距离</li>
+            <li>解决方案是在float的标签样式控制中加入:_display:inline;将其转化为行内属性。(_这个符号只有ie6会识别)</li>
+        </ul>
+        </p>
+        <h4>4.css中的IE浏览器识别:渐进识别的方式，从总体中逐渐排除局部。</h4>
+
+        <p>
+        <ul>
+            <li>首先，巧妙的使用“\9”这一标记，将IE游览器从所有情况中分离出来。</li>
+            <li>接着，再次使用“+”将IE8和IE7、IE6分离开来，这样IE8已经独立识别。</li>
+            <li><pre>   .bb{
+         background-color:#f1ee18;/*所有识别*/
+        .background-color:#00deff\9; /*IE6、7、8识别*/
+        +background-color:#a200ff;/*IE6、7识别*/
+        _background-color:#1e0bd1;/*IE6识别*/
+    }</pre>
+            </li>
+        </ul>
+        </p>
+        <h4>5.IE下,even对象有x,y属性,但是没有pageX,pageY属性;Firefox下,event对象有pageX,pageY属性,但是没有x,y属性.</h4>
+
+        <h4>6.Chrome 中文界面下默认会将小于 12px 的文本强制按照 12px 显示</h4>
+
+        <p>
+            可通过加入 CSS 属性 -webkit-text-size-adjust: none; 解决.
+        </p>
+        <h4>7.让老ie浏览器支持html5</h4>
+
+        <p>
+        <ol>
+            <li>直接使用成熟的框架、使用最多的是html5shim框架</li>
+            <li>引入文件&lt;!--[if IE]&gt; &lt;script src=”http://html5shiv.googlecode.com/svn/trunk/html5.js”&gt;&lt;/script&gt; &lt;![endif]--&gt;</li>
+            <li>将上代码复制到head部分，记住一定要是head部分</li>
+            <li>最后在css里面加上这段:</li>
+            <li>/*html5*/ article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}</li>
+        </ol>
+        </p>
+        <h4>8.如何让老浏览器支持websocket</h4>
+
+        <p>
+            Adobe Flash Socket，基于长轮询的 XHR
+        </p>
+        <h4>9.ie上没有min-width属性</h4>
+
+        <p>
+        <ul>
+            <li>用css表达式</li>
+            <li>
+                    <pre>   #container{
+        min-width: 600px;
+        width:expression(document.body.clientWidth &lt; 600? "600px": "auto" );
+    }</pre>
+            </li>
+        </ul>
+        </p>
+        <h4>10.LI中内容超过长度后以省略号显示的方法</h4>
+
+        <p>
+                <pre>   li {
+        width:200px;
+        white-space:nowrap;
+        text-overflow:ellipsis;
+        -o-text-overflow:ellipsis;
+        overflow: hidden;
+    }</pre>
+        </p>
+
+        <h4>11.滚动条样式</h4>
+
+        <p>
+            <a target="_blank" href="http://www.qianduan.net/css-custom-scroll-bar-style.html">详见此处</a>
+        </p>
+
+        <h4>12.自动换行</h4>
+        <p>
+            <ul>
+                <li>IE中直接使用 word-wrap:break-word 就可以了, FF中我们使用JS插入&#10;的方法来解决</li>
+                <li>
+                    <pre>   function toBreakWord(el, intLen){
+        var  ōbj=document.getElementById(el);
+        var strContent=obj.innerHTML;
+        var strTemp="";
+        while(strContent.length>intLen){
+            strTemp+=strContent.substr(0,intLen)+"&#10;";
+            strContent=strContent.substr(intLen,strContent.length);
+        }
+        strTemp+="&#10;"+strContent;
+        obj.innerHTML=strTemp;
+    }
+    if(document.getElementById   &&   !document.all)
+        toBreakWord("ff",  37);</pre>
+                </li>
+            </ul>
+        </p>
+        <h2>二.iframe的使用</h2>
+            <h4>1.iframe会阻塞主页面的Onload事件；</h4>
+            <h4>2.iframe和主页面共享连接池，而浏览器对相同域的连接有限制，所以会影响页面的并行加载。；</h4>
+            <h4>3.使用iframe之前需要考虑这两个缺点。如果需要使用iframe，最好是通过javascript动态给iframe添加src属性值，这样可以可以绕开以上两个问题。</h4>
+
+        <h2>三.HTML5的离线储存</h2>
+            <h4>1.localStorage    长期存储数据，浏览器关闭后数据不丢失；</h4>
+            <h4>2.sessionStorage  数据在浏览器关闭后自动删除。</h4>
+        <h2>四.代码语义化</h2>
+            <h4>1.用正确的标签做正确的事情！</h4>
+            <h4>2.HTML5中新增加的很多标签（如：&lt;article&gt;、&lt;nav&gt;、&lt;header&gt;和&lt;footer&gt;等）就是基于语义化设计原则</h4>
+            <h4>3.html语义化就是让页面的内容结构化，便于对浏览器、搜索引擎解析；</h4>
+            <h4>4.在没有样式CCS情况下也以一种文档格式显示，并且是容易阅读的。</h4>
+    </div>
+    </div>
+</article>
+
+<div ms-include-src="'../viewpart/footPart.html'" data-include-replace="true"></div>
+
+<script type="text/javascript" src='../framework/avalon/avalon.min.js'></script>
+<!-- TODO开发环境需要更换 -->
+<script type="text/javascript" src='../js/src/detail/learn_interview.js'></script>
+</body>
+</html>
