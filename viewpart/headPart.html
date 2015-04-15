@@ -15,12 +15,32 @@
                     <li id='head_homeBt'><a href="index.html">Home</a></li>
                     <li id='head_lifeBt'><a href="life.html">生活</a></li>
                     <li id='head_learnBt'><a href="learn.html">学习</a></li>
-                    <li id='head_libraryBt'><a href="#">图书室</a></li>
-                    <li id='head_aboutmeBt'><a href="#">关于我</a></li>
+                    <li id='head_libraryBt'><a href="library.html">图书室</a></li>
+                    <li id='head_aboutmeBt'><a href="aboutme.html">关于我</a></li>
                 </ul>
             </div>
         </div>
 </header>
-<!--<script>-->
-    <!--if(location.href)-->
-<!--</script>-->
+<script>
+    headPart = {
+        //初始化head的方法
+        initHead : function(activeId){
+            //根据路径设置href
+            var dotsCount = location.href.split("/").length-3;
+            if(dotsCount>1){
+                $('#header-nav a').each(function(index){
+                    var aTag = $(this);
+                    var href = aTag.attr('href');
+                    var prefix = "";
+                    for(var i = 0;i<dotsCount-1;i++){
+                        prefix = '../' + prefix;
+                    }
+                    aTag.attr('href',prefix+href);
+                });
+            }
+            //设置按钮
+            var activeLi = $('#'+activeId);
+            activeLi.addClass('active');
+        }
+    };
+</script>

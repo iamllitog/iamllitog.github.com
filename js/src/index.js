@@ -16,7 +16,7 @@ avalon.config({
 require(['jquery','bootstrap','domReady!'],function () {
 	avalon.define("mean", function(vm){
                     vm.loadHead = function () {
-                        $('#head_homeBt').addClass('active');
+                        headPart.initHead('head_homeBt');
                     };
 
             });

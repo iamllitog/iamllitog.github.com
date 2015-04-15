@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>前端面试总结</title>
+    <link rel="stylesheet" href="../framework/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../framework/font-swesome/css/font-awesome.min.css">
+
+    <!-- TODO开发环境需要更换 -->
+    <link rel="stylesheet" href="../css/css/base/detailPage.css">
+</head>
+<body ms-controller="mean">
+<div ms-include-src="'../viewpart/headPart.html'" data-include-replace="true" data-include-rendered='loadHead'></div>
+
+<article class="container article">
+    <h1>前端面试题总结-Javascript</h1>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <h4>1.如何实现浏览器内多个标签页之间的通信?</h4>
+
+            <p>
+            <ul>
+                调用localstorge、cookies等本地存储方式
+            </ul>
+            </p>
+            <h4>2.JavaScript原型，原型链</h4>
+
+            <p>
+            <ul>
+                虽然可以通过对象实例访问并修改保存在原型中的值，但却不能通过对象实例重写原型中的值。这样做会相当于在实例上创建了一个属性。
+            </ul>
+            </p>
+            <h4>3.js的基本数据类型。</h4>
+
+            <p>
+                number,string,boolean,object,undefined
+            </p>
+            <h4>4.["1", "2", "3"].map(parseInt) 答案是多少？</h4>
+
+            <p>
+                [1, NaN, NaN] 因为 parseInt 需要两个参数 (val, radix)，其中 radix 表示解析时用的基数。map 传了 3 个 (element, index, array)，对应的 radix 不合法导致解析失败。
+            </p>
+            <h4>5.This对象</h4>
+
+            <p>
+            <ul>
+                <li>this是js的一个关键字，随着函数使用场合不同，this的值会发生变化。</li>
+                <li>但是有一个总原则，那就是this指的是调用函数的那个对象。</li>
+                <li>this一般情况下：是全局对象Global。 作为方法调用，那么this就是指这个对象</li>
+            </ul>
+            </p>
+            <h4>6.事件是？IE与火狐的事件机制有什么区别？ 如何阻止冒泡？</h4>
+
+            <p>
+            <ol>
+                <li>我们在网页中的某个操作（有的操作对应多个事件）。例如：当我们点击一个按钮就会产生一个事件。是可以被 JavaScript 侦测到的行为。</li>
+                <li>事件处理机制：IE是事件冒泡、火狐是 事件捕获；</li>
+                <li>ev.stopPropagation();</li>
+            </ol>
+            </p>
+            <h4>7.什么是闭包（closure），为什么要用它？</h4>
+
+            <p>
+            <ul>
+                <li>在函数内部创建函数，并使用函数内部的变量就是闭包</li>
+                <li>变量的闭包:闭包的用处，如果构造函数中使用回调，并在内部调用this可以通过闭包</li>
+                <li>var that = this;</li>
+                <li>函数的闭包:</li>
+                <li>可以返回函数</li>
+                <li>使用闭包会提升变量级别，并且不会在函数结束后自动清除，为避免内存溢出要手动清除</li>
+            </ul>
+            </p>
+            <h4>8."use strict";是什么意思 ? 使用它的好处和坏处分别是什么？</h4>
+
+            <p>
+                严格模式，使得书写规范，但是各浏览器严格程度不一样,node推荐使用,前端不推荐
+            </p>
+            <h4>9.如何判断一个对象是否属于某个类？</h4>
+
+            <p>
+                使用instanceof
+            </p>
+            <h4>10.new操作符具体干了什么呢?</h4>
+
+            <p>
+            <ul>
+                <li>1、创建一个空对象，并且 this 变量引用该对象，同时还继承了该函数的原型。</li>
+                <li>
+                    <pre>   var obj  = {};
+    obj.__proto__ = Base.prototype;</pre>
+                </li>
+                <li>2、属性和方法被加入到 this 引用的对象中。</li>
+                <li>
+                        <pre>   Base.call(obj);</pre>
+                </li>
+                <li>3、新创建的对象由 this 所引用，并且最后隐式的返回 this 。</li>
+            </ul>
+            </p>
+
+            <h4>11.Javascript中，有一个函数，执行时对象查找时，永远不会去查找原型，这个函数是？</h4>
+
+            <p>
+                hasOwnProperty
+            </p>
+            <h4>12.JSON</h4>
+
+            <p>
+                是一种轻量级的数据交换格式。它是基于JavaScript的一个子集。数据格式简单, 易于读写, 占用带宽小
+            </p>
+            <h4>13.js延迟加载的方式有哪些？</h4>
+
+            <p>
+            <ul>
+                <li>defer和async</li>
+                <li>动态创建DOM方式（用得最多）</li>
+                <li>按需异步载入js(AMD,CMD)</li>
+            </ul>
+            </p>
+            <h4>14.模块化怎么做</h4>
+
+            <p>
+                立即执行函数,不暴露私有成员
+            </p>
+            <h4>15.AMD—require.js</h4>
+
+            <p>
+                <a href="http://www.ruanyifeng.com/blog/2012/11/require_js.html" target="_blank">详见此处</a>
+            </p>
+
+            <h4>16.documen.write和 innerHTML的区别</h4>
+
+            <p>
+            <ul>
+                <li>document.write只能重绘整个页面</li>
+                <li>innerHTML可以重绘页面的一部分</li>
+            </ul>
+            </p>
+
+            <h4>17.call() 和 apply() 的区别</h4>
+
+            <p>
+            <ul>
+                <li>call接受多个参数</li>
+                <li>apply接受两个参数，第二个参数为数组</li>
+                <li>当调用一个函数时，可以赋值一个不同的 this 对象。this 引用当前对象，即 call 方法的第一个参数。</li>
+            </ul>
+            </p>
+
+            <h4>18.针对query的优化</h4>
+
+            <p>
+            <ol>
+                <li>基于Class的选择性的性能相对于Id选择器开销很大，因为需遍历所有DOM元素。</li>
+                <li>频繁操作的DOM，先缓存起来再操作。或者用Jquery的链式调用更好。</li>
+                <pre>   var str=$("a").attr("href");</pre>
+                <li>for (var i = size, length = arr.length; i < length; i++) {} 比 for (var i = size; i < arr.length; i++) {} 好</li>
+            </ol>
+            </p>
+            <h4>19.JavaScript中的作用域与变量声明提升</h4>
+
+            <p>
+            <ol>
+                <li>在函数内是作用域</li>
+                <li>函数内变量声明var则使用上一级变量，并依次向上查询，如果没有，此变量则为全局变量</li>
+                <li>setTimeout方法使用的this为全局变量</li>
+                <li>将javascript中函数下面声明的变量提升到函数开头就是变量声明提升，最常见的就是函数</li>
+            </ol>
+            </p>
+            <h4>20.内存泄漏</h4>
+
+            <p>
+            <ul>
+                <li>消除声明的变量（不要使用delete）</li>
+                <li>
+                    <pre>   var o = { x: 1 };
+    o = null;</pre>
+                </li>
+                <li>全局变量不会被回收，尽量不使用</li>
+                <li>如果使用的数据缓存在本地，确保清理一下缓存或使用老化机制，以避免大量不被重用的数据被存储。</li>
+                <li>确保解绑那些不再需要的事件监听器，尤其是那些即将被销毁的DOM对象所绑定的事件监听器。</li>
+                <li>闭包如果不及时清理会造成内存泄漏</li>
+            </ul>
+            </p>
+            <h4>21.如何编写高性能的Javascript</h4>
+
+            <p>
+            <ul>
+                <li>注意内存泄漏</li>
+                <li>可读性，继承模型和可维护性比性能更重要</li>
+                <li>雅虎14条军规:<a target="_blank" href="http://segmentfault.com/blog/trigkit4/1190000000656717">http://segmentfault.com/blog/trigkit4/1190000000656717</a></li>
+                <li>
+                    <ol>
+                        <li>启用Gzip压缩</li>
+                        <li>减少HTTP请求数:CSS Sprites, JS、CSS源码压缩、图片大小控制合适；网页Gzip，CDN托管，data缓存 ，图片服务器。</li>
+                        <li>前端模板 JS+数据，减少由于HTML标签导致的带宽浪费，前端用变量保存AJAX请求结果，每次操作本地变量，不用请求，减少请求次数</li>
+                        <li>用innerHTML代替DOM操作，减少DOM操作次数，优化javascript性能。</li>
+                        <li>当需要设置的样式很多时设置className而不是直接操作style。</li>
+                        <li>少用全局变量、缓存DOM节点查找的结果。减少IO读取操作。</li>
+                        <li>避免使用css表达式</li>
+                        <li>图片预加载，将样式表放在顶部，将脚本放在底部  加上时间戳。</li>
+                        <li>避免在页面的主体布局中使用table，table要等其中的内容完全下载之后才会显示出来，显示比div+css布局慢。</li>
+                    </ol>
+                </li>
+            </ul>
+            </p>
+            <h4>22.如何判断当前脚本运行在浏览器还是node环境中？</h4>
+
+            <p>
+                通过判断Global对象是否为window，如果不为window，当前脚本没有运行在浏览器中
+            </p>
+
+        </div>
+    </div>
+</article>
+
+<div ms-include-src="'../viewpart/footPart.html'" data-include-replace="true"></div>
+
+<script type="text/javascript" src='../framework/avalon/avalon.min.js'></script>
+<!-- TODO开发环境需要更换 -->
+<script type="text/javascript" src='../js/src/detail/learn_interview.js'></script>
+</body>
+</html>
