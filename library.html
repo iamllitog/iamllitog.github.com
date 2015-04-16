@@ -3,12 +3,12 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>学习-Laboratory</title>
+    <title>图书馆-Laboratory</title>
     <link rel="stylesheet" href="framework/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="framework/font-swesome/css/font-awesome.min.css">
 
     <!-- TODO开发环境需要更换 -->
-    <link rel="stylesheet" href="css/css/learn.css">
+    <link rel="stylesheet" href="css/css/library.css">
 </head>
 <body ms-controller="mean">
 <div ms-include-src="'./viewpart/headPart.html'" data-include-replace="true" data-include-rendered='loadHead'></div>
@@ -17,20 +17,33 @@
         <div class="col-md-5 col-md-offset-2 col-sm-7 contentArea col-xs-12">
             <h2>实验成果报告</h2>
             <ul>
-                <li><span class='glyphicon glyphicon-sunglasses'></span> 我是一个码农</li>
-                <li><span class='glyphicon glyphicon-sunglasses'></span> 码农不学新东西怎么活，怎么涨工资</li>
-                <li><span class='glyphicon glyphicon-sunglasses'></span> 别叫码农了，，码农没对象</li>
-                <li><span class='glyphicon glyphicon-sunglasses'></span> 还是叫我前端攻城狮吧</li>
+                <li><span class='glyphicon glyphicon-lamp'></span> 智者学经验，愚者学教训</li>
+                <li><span class='glyphicon glyphicon-lamp'></span> 书是人类知识经验的总结</li>
+                <li><span class='glyphicon glyphicon-lamp'></span> 既然是总结，就不要自己再走弯路了</li>
+                <li><span class='glyphicon glyphicon-lamp'></span> 想走的更远？看书吧</li>
             </ul>
         </div>
         <div class="col-md-4 col-sm-3 col-xs-12">
-            <img alt="李桐的里程碑" class="milestoneImg" src="img/icon2.png">
+            <img alt="李桐的里程碑" class="milestoneImg" src="img/icon4.png">
         </div>
     </div>
-    </div>
+</div>
 
-    <div class="container">
+<div class="container">
     <div class="row milestoneContent">
+
+        <div class="col-sm-4 col-md-3">
+            <div class="thumbnail">
+                <a href="library_detail/library_coolzen.html">
+                    <img src="img/article/articleThumbnail_7.jpg" alt="迷男启示录-酷之禅">
+                </a>
+                <div class="caption">
+                    <a href="library_detail/library_coolzen.html">
+                        <h3>迷男启示录-酷之禅<span class="bookBadge">图书</span><span class="reprintedBadge">转载</span></h3>
+                    </a>
+                </div>
+            </div>
+        </div>
 
         <div class="col-sm-4 col-md-3">
             <div class="thumbnail">
@@ -61,36 +74,15 @@
         <div class="col-sm-4 col-md-3">
             <div class="thumbnail">
                 <a href="learn_detail/learn_interview_css.html">
-                <img src="img/article/articleThumbnail_4.jpg" alt="前端面试题总结-CSS">
+                    <img src="img/article/articleThumbnail_4.jpg" alt="前端面试题总结-CSS">
                 </a>
                 <div class="caption">
                     <a href="learn_detail/learn_interview_css.html">
-                    <h3>前端面试题总结-CSS<span class="learnBadge">学习</span></h3>
+                        <h3>前端面试题总结-CSS<span class="learnBadge">学习</span></h3>
                     </a>
                 </div>
             </div>
         </div>
-
-        <div class="col-sm-4 col-md-3">
-            <div class="thumbnail">
-
-                <img src="img/article/articleThumbnail_2.jpg" alt="我的很水的手机UI框架">
-
-                <div class="caption">
-                    <h3>我的很水的手机UI框架<span class="learnBadge">学习</span></h3>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm-4 col-md-3">
-            <div class="thumbnail">
-                <img src="img/article/articleThumbnail_3.jpg" alt="响应式布局学习">
-                <div class="caption">
-                    <h3>响应式布局学习<span class="reprintedBadge">转载</span></h3>
-                </div>
-            </div>
-        </div>
-
     </div>
 </div>
 
@@ -100,6 +92,6 @@
 
 <script type="text/javascript" src='framework/avalon/avalon.min.js'></script>
 <!-- TODO开发环境需要更换 -->
-<script type="text/javascript" src='js/src/learn.js'></script>
+<script type="text/javascript" src='js/src/library.js'></script>
 </body>
 </html>

@@ -1,0 +1,270 @@
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 13, ../scss/base/base.scss */
+body {
+  background-image: url('/img/background.png?1428378580');
+}
+
+/* line 27, ../scss/base/base.scss */
+span.reprintedBadge {
+  margin-left: 5px;
+  color: white;
+  padding: 2px;
+  font-size: 0.8em;
+  background-color: red;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 31, ../scss/base/base.scss */
+span.learnBadge {
+  margin-left: 5px;
+  color: white;
+  padding: 2px;
+  font-size: 0.8em;
+  background-color: #4e72b8;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 35, ../scss/base/base.scss */
+span.lifeBadge {
+  margin-left: 5px;
+  color: white;
+  padding: 2px;
+  font-size: 0.8em;
+  background-color: #40835e;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 39, ../scss/base/base.scss */
+span.bookBadge {
+  margin-left: 5px;
+  color: white;
+  padding: 2px;
+  font-size: 0.8em;
+  background-color: #2f271d;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 13, ../scss/library.scss */
+div.lifeTitle {
+  margin-top: 50px;
+}
+/* line 15, ../scss/library.scss */
+div.lifeTitle > div {
+  height: 335px;
+  color: #2F4F4F;
+  border-bottom: 1px solid #848484;
+}
+/* line 19, ../scss/library.scss */
+div.lifeTitle > div img.milestoneImg {
+  margin-top: 10px;
+  width: 330px;
+  height: auto;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* line 15, ../scss/library.scss */
+  div.lifeTitle > div {
+    height: 285px;
+  }
+  /* line 28, ../scss/library.scss */
+  div.lifeTitle > div .contentArea {
+    padding-top: 1em;
+    padding-left: 3.5em;
+  }
+  /* line 33, ../scss/library.scss */
+  div.lifeTitle > div img.milestoneImg {
+    margin-top: 10px;
+    width: 280px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 15, ../scss/library.scss */
+  div.lifeTitle > div {
+    text-align: center;
+    height: 200px;
+  }
+  /* line 44, ../scss/library.scss */
+  div.lifeTitle > div img.milestoneImg {
+    margin-top: 0px;
+    width: 180px;
+    height: auto;
+  }
+}
+/* line 50, ../scss/library.scss */
+div.lifeTitle > div .contentArea {
+  padding-top: 4em;
+}
+/* line 52, ../scss/library.scss */
+div.lifeTitle > div .contentArea h2 {
+  padding-left: 12%;
+  font-size: 2em;
+  font-weight: bold;
+}
+/* line 57, ../scss/library.scss */
+div.lifeTitle > div .contentArea ul {
+  text-align: left;
+  margin-top: 1em;
+  font-size: 1.2em;
+  padding-left: 1em;
+}
+/* line 62, ../scss/library.scss */
+div.lifeTitle > div .contentArea ul li {
+  line-height: 2.2em;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* line 50, ../scss/library.scss */
+  div.lifeTitle > div .contentArea {
+    padding-top: 2em;
+  }
+  /* line 69, ../scss/library.scss */
+  div.lifeTitle > div .contentArea h2 {
+    padding-left: 6%;
+  }
+  /* line 72, ../scss/library.scss */
+  div.lifeTitle > div .contentArea ul {
+    padding-left: 0.6em;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 50, ../scss/library.scss */
+  div.lifeTitle > div .contentArea {
+    padding-top: 10px;
+  }
+  /* line 80, ../scss/library.scss */
+  div.lifeTitle > div .contentArea h2 {
+    padding-left: 0px;
+    font-size: 1.5em;
+  }
+  /* line 84, ../scss/library.scss */
+  div.lifeTitle > div .contentArea ul {
+    display: none;
+  }
+}
+
+/* line 97, ../scss/library.scss */
+div.milestoneContent {
+  border-bottom: 1px solid #848484;
+}
+/* line 99, ../scss/library.scss */
+div.milestoneContent div.thumbnail {
+  height: 250px;
+}
+/* line 101, ../scss/library.scss */
+div.milestoneContent div.thumbnail img {
+  height: 65%;
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 99, ../scss/library.scss */
+  div.milestoneContent div.thumbnail {
+    height: 205px;
+  }
+  /* line 107, ../scss/library.scss */
+  div.milestoneContent div.thumbnail h3 {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 992px) {
+  /* line 99, ../scss/library.scss */
+  div.milestoneContent div.thumbnail {
+    height: 200px;
+  }
+  /* line 114, ../scss/library.scss */
+  div.milestoneContent div.thumbnail img {
+    height: 70%;
+  }
+  /* line 117, ../scss/library.scss */
+  div.milestoneContent div.thumbnail h3 {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 99, ../scss/library.scss */
+  div.milestoneContent div.thumbnail {
+    height: 270px;
+  }
+  /* line 124, ../scss/library.scss */
+  div.milestoneContent div.thumbnail img {
+    height: 80%;
+  }
+  /* line 127, ../scss/library.scss */
+  div.milestoneContent div.thumbnail h3 {
+    font-size: 1em;
+  }
+}
+/* line 132, ../scss/library.scss */
+div.milestoneContent > div {
+  margin-top: 20px;
+  text-align: center;
+}
