@@ -116,155 +116,23 @@ span.bookBadge {
   border-radius: 5px;
 }
 
-/* line 13, ../scss/aboutme.scss */
-div.lifeTitle {
-  margin-top: 50px;
+/* line 8, ../scss/aboutme.scss */
+.contentArea {
+  margin-top: 70px;
+  margin-bottom: 100px;
 }
-/* line 15, ../scss/aboutme.scss */
-div.lifeTitle > div {
-  height: 335px;
-  color: #2F4F4F;
-  border-bottom: 1px solid #848484;
-}
-/* line 19, ../scss/aboutme.scss */
-div.lifeTitle > div img.milestoneImg {
-  margin-top: 10px;
-  width: 330px;
-  height: auto;
-}
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  /* line 15, ../scss/aboutme.scss */
-  div.lifeTitle > div {
-    height: 285px;
-  }
-  /* line 28, ../scss/aboutme.scss */
-  div.lifeTitle > div .contentArea {
-    padding-top: 1em;
-    padding-left: 3.5em;
-  }
-  /* line 33, ../scss/aboutme.scss */
-  div.lifeTitle > div img.milestoneImg {
-    margin-top: 10px;
-    width: 280px;
-    height: auto;
-  }
-}
-@media screen and (max-width: 768px) {
-  /* line 15, ../scss/aboutme.scss */
-  div.lifeTitle > div {
-    text-align: center;
-    height: 200px;
-  }
-  /* line 44, ../scss/aboutme.scss */
-  div.lifeTitle > div img.milestoneImg {
-    margin-top: 0px;
-    width: 180px;
-    height: auto;
-  }
-}
-/* line 50, ../scss/aboutme.scss */
-div.lifeTitle > div .contentArea {
-  padding-top: 4em;
-}
-/* line 52, ../scss/aboutme.scss */
-div.lifeTitle > div .contentArea h2 {
-  padding-left: 12%;
-  font-size: 2em;
+/* line 11, ../scss/aboutme.scss */
+.contentArea h1 {
   font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 30px;
 }
-/* line 57, ../scss/aboutme.scss */
-div.lifeTitle > div .contentArea ul {
-  text-align: left;
-  margin-top: 1em;
+/* line 16, ../scss/aboutme.scss */
+.contentArea p {
+  margin-top: 10px;
   font-size: 1.2em;
-  padding-left: 1em;
 }
-/* line 62, ../scss/aboutme.scss */
-div.lifeTitle > div .contentArea ul li {
-  line-height: 2.2em;
-}
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  /* line 50, ../scss/aboutme.scss */
-  div.lifeTitle > div .contentArea {
-    padding-top: 2em;
-  }
-  /* line 69, ../scss/aboutme.scss */
-  div.lifeTitle > div .contentArea h2 {
-    padding-left: 6%;
-  }
-  /* line 72, ../scss/aboutme.scss */
-  div.lifeTitle > div .contentArea ul {
-    padding-left: 0.6em;
-  }
-}
-@media screen and (max-width: 768px) {
-  /* line 50, ../scss/aboutme.scss */
-  div.lifeTitle > div .contentArea {
-    padding-top: 10px;
-  }
-  /* line 80, ../scss/aboutme.scss */
-  div.lifeTitle > div .contentArea h2 {
-    padding-left: 0px;
-    font-size: 1.5em;
-  }
-  /* line 84, ../scss/aboutme.scss */
-  div.lifeTitle > div .contentArea ul {
-    display: none;
-  }
-}
-
-/* line 97, ../scss/aboutme.scss */
-div.milestoneContent {
-  border-bottom: 1px solid #848484;
-}
-/* line 99, ../scss/aboutme.scss */
-div.milestoneContent div.thumbnail {
-  height: 250px;
-}
-/* line 101, ../scss/aboutme.scss */
-div.milestoneContent div.thumbnail img {
-  height: 65%;
-}
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-  /* line 99, ../scss/aboutme.scss */
-  div.milestoneContent div.thumbnail {
-    height: 205px;
-  }
-  /* line 107, ../scss/aboutme.scss */
-  div.milestoneContent div.thumbnail h3 {
-    font-size: 0.9em;
-  }
-}
-@media screen and (max-width: 992px) {
-  /* line 99, ../scss/aboutme.scss */
-  div.milestoneContent div.thumbnail {
-    height: 200px;
-  }
-  /* line 114, ../scss/aboutme.scss */
-  div.milestoneContent div.thumbnail img {
-    height: 70%;
-  }
-  /* line 117, ../scss/aboutme.scss */
-  div.milestoneContent div.thumbnail h3 {
-    font-size: 0.8em;
-  }
-}
-@media screen and (max-width: 768px) {
-  /* line 99, ../scss/aboutme.scss */
-  div.milestoneContent div.thumbnail {
-    height: 270px;
-  }
-  /* line 124, ../scss/aboutme.scss */
-  div.milestoneContent div.thumbnail img {
-    height: 80%;
-  }
-  /* line 127, ../scss/aboutme.scss */
-  div.milestoneContent div.thumbnail h3 {
-    font-size: 1em;
-  }
-}
-/* line 132, ../scss/aboutme.scss */
-div.milestoneContent > div {
-  margin-top: 20px;
-  text-align: center;
+/* line 20, ../scss/aboutme.scss */
+.contentArea hr {
+  background-color: #000000;
 }

@@ -5,132 +5,149 @@ $font1Color : #1c1c1c;
 $font2Color : #2F4F4F;
 $splitBorder : 1px solid $splitColor;
 
-//里程碑标题区域
-$milestoneHeight : 330px;
-$milestoneSMHeight : 280px;
-$milestoneXSHeight : 180px;
-$milestoneXSIcon : 150px;
-div.lifeTitle{
-  margin-top: 50px;
-  >div{
-    height: $milestoneHeight + 5;
-    color: $font2Color;
-    border-bottom: $splitBorder;
-    img.milestoneImg{
-      margin-top: 10px;
-      width: $milestoneHeight;
-      height: auto;
-    }
-
-    //小屏幕下
-    @media screen and (min-width: $screen-sm) and (max-width: $screen-md){
-      height: $milestoneSMHeight + 5;
-      .contentArea{
-        padding-top: 1em;
-        padding-left: 3.5em;
-      }
-
-      img.milestoneImg{
-        margin-top: 10px;
-        width: $milestoneSMHeight;
-        height: auto;
-      }
-    }
-
-    //手机屏幕下
-    @media screen and (max-width: $screen-sm){
-      text-align:center;
-      height: $milestoneXSHeight+20;
-      img.milestoneImg{
-        margin-top: 0px;
-        width: $milestoneXSHeight;
-        height: auto;
-      }
-    }
-    .contentArea{
-      padding-top: 4em;
-      h2{
-        padding-left: 12%;
-        font-size: 2em;
-        font-weight: bold;
-      }
-      ul{
-        text-align: left;
-        margin-top: 1em;
-        font-size: 1.2em;
-        padding-left: 1em;
-        li{
-          line-height: 2.2em;
-        }
-      }
-      //小型屏幕下
-      @media screen and (min-width: $screen-sm) and (max-width: $screen-md){
-        padding-top: 2em;
-        h2{
-          padding-left: 6%;
-        }
-        ul{
-          padding-left: 0.6em;
-        }
-      }
-
-      //手机屏幕下
-      @media screen and (max-width: $screen-sm){
-        padding-top:10px;
-        h2{
-          padding-left: 0px;
-          font-size: 1.5em;
-        }
-        ul{
-          display: none;
-        }
-      }
-    }
+.contentArea{
+  margin-top: 70px;
+  margin-bottom: 100px;
+  h1{
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+  p{
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  hr{
+    background-color: #000000;
   }
 }
+
+//里程碑标题区域
+//$milestoneHeight : 330px;
+//$milestoneSMHeight : 280px;
+//$milestoneXSHeight : 180px;
+//$milestoneXSIcon : 150px;
+//div.lifeTitle{
+//  margin-top: 50px;
+//  >div{
+//    height: $milestoneHeight + 5;
+//    color: $font2Color;
+//    border-bottom: $splitBorder;
+//    img.milestoneImg{
+//      margin-top: 10px;
+//      width: $milestoneHeight;
+//      height: auto;
+//    }
+//
+//    //小屏幕下
+//    @media screen and (min-width: $screen-sm) and (max-width: $screen-md){
+//      height: $milestoneSMHeight + 5;
+//      .contentArea{
+//        padding-top: 1em;
+//        padding-left: 3.5em;
+//      }
+//
+//      img.milestoneImg{
+//        margin-top: 10px;
+//        width: $milestoneSMHeight;
+//        height: auto;
+//      }
+//    }
+//
+//    //手机屏幕下
+//    @media screen and (max-width: $screen-sm){
+//      text-align:center;
+//      height: $milestoneXSHeight+20;
+//      img.milestoneImg{
+//        margin-top: 0px;
+//        width: $milestoneXSHeight;
+//        height: auto;
+//      }
+//    }
+//    .contentArea{
+//      padding-top: 4em;
+//      h2{
+//        padding-left: 12%;
+//        font-size: 2em;
+//        font-weight: bold;
+//      }
+//      ul{
+//        text-align: left;
+//        margin-top: 1em;
+//        font-size: 1.2em;
+//        padding-left: 1em;
+//        li{
+//          line-height: 2.2em;
+//        }
+//      }
+//      //小型屏幕下
+//      @media screen and (min-width: $screen-sm) and (max-width: $screen-md){
+//        padding-top: 2em;
+//        h2{
+//          padding-left: 6%;
+//        }
+//        ul{
+//          padding-left: 0.6em;
+//        }
+//      }
+//
+//      //手机屏幕下
+//      @media screen and (max-width: $screen-sm){
+//        padding-top:10px;
+//        h2{
+//          padding-left: 0px;
+//          font-size: 1.5em;
+//        }
+//        ul{
+//          display: none;
+//        }
+//      }
+//    }
+//  }
+//}
 
 //里程碑内容区域
-$milestoneItemHeight : 250px;
-$milestoneItemMDHeight : 205px;
-$milestoneItemSMHeight : 200px;
-$milestoneItemXSHeight : 270px;
-div.milestoneContent{
-  border-bottom: $splitBorder;
-  div.thumbnail{
-    height: $milestoneItemHeight;
-    img{
-      height: 65%;
-    }
-    //中型屏幕调整高度
-    @media screen and (min-width: $screen-md) and (max-width:$screen-lg){
-      height: $milestoneItemMDHeight;
-      h3{
-        font-size:0.9em;
-      }
-    }
-    //小型屏幕调整高度
-    @media screen and (max-width:$screen-md){
-      height: $milestoneItemSMHeight;
-      img{
-        height: 70%;
-      }
-      h3{
-        font-size:0.8em;
-      }
-    }
-    //手机屏幕调整高度
-    @media screen and (max-width:$screen-sm){
-      height: $milestoneItemXSHeight;
-      img{
-        height: 80%;
-      }
-      h3{
-        font-size:1em;
-      }
-    }
-  }
-  >div{
-    margin-top: 20px;
-    text-align: center;
-  }
-}
+//$milestoneItemHeight : 250px;
+//$milestoneItemMDHeight : 205px;
+//$milestoneItemSMHeight : 200px;
+//$milestoneItemXSHeight : 270px;
+//div.milestoneContent{
+//  border-bottom: $splitBorder;
+//  div.thumbnail{
+//    height: $milestoneItemHeight;
+//    img{
+//      height: 65%;
+//    }
+//    //中型屏幕调整高度
+//    @media screen and (min-width: $screen-md) and (max-width:$screen-lg){
+//      height: $milestoneItemMDHeight;
+//      h3{
+//        font-size:0.9em;
+//      }
+//    }
+//    //小型屏幕调整高度
+//    @media screen and (max-width:$screen-md){
+//      height: $milestoneItemSMHeight;
+//      img{
+//        height: 70%;
+//      }
+//      h3{
+//        font-size:0.8em;
+//      }
+//    }
+//    //手机屏幕调整高度
+//    @media screen and (max-width:$screen-sm){
+//      height: $milestoneItemXSHeight;
+//      img{
+//        height: 80%;
+//      }
+//      h3{
+//        font-size:1em;
+//      }
+//    }
+//  }
+//  >div{
+//    margin-top: 20px;
+//    text-align: center;
+//  }
+//}
