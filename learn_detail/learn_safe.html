@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>前端安全总结</title>
+    <link rel="stylesheet" href="../framework/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../framework/font-swesome/css/font-awesome.min.css">
+
+    <!-- TODO开发环境需要更换 -->
+    <link rel="stylesheet" href="../css/css/base/detailPage.css">
+</head>
+<body ms-controller="mean">
+<div ms-include-src="'../viewpart/headPart.html'" data-include-replace="true" data-include-rendered='loadHead'></div>
+
+<article class="container article">
+    <h1>前端安全总结</h1>
+    <div class="row">
+        <div class="col-xs-12">
+        <h2>一.XSS攻击：Cross Site Script（跨站攻击脚本）</h2>
+        <h4>往Web页面里插入恶意html代码，当用户浏览该页之时，嵌入其中Web里面的html代码会被执行。</h4>
+        <p>
+            <ol>
+                <li>基于DOM的XSS</li>
+                <li>持久性XSS</li>
+            </ol>
+         </p>
+    </div>
+</article>
+
+<div ms-include-src="'../viewpart/footPart.html'" data-include-replace="true"></div>
+
+<script type="text/javascript" src='../framework/avalon/avalon.min.js'></script>
+<!-- TODO开发环境需要更换 -->
+<script type="text/javascript" src='../js/src/detail/learn_interview.js'></script>
+</body>
+</html>
